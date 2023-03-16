@@ -22,7 +22,7 @@ void input() {
 
 	for (int i = 0; i < n; i++) {
 		cout << "Data ke-" << (i + 1) << ": ";
-		cin >> a[1];
+		cin >> a[i];
 	}
 }
 void bubbleSortArray() {
@@ -57,4 +57,13 @@ void display() {
 		cout << a[j] << endl;
 	}
 	cout << endl;
+}
+
+int main() {
+	input();
+	unsorted();
+	bubbleSortArray();
+	display();
+
+	return 0;
 }
